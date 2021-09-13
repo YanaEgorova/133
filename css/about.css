@@ -1,0 +1,35 @@
+@media screen and (min-width: 1024px)  {
+    .about__wrapper {
+        overflow: hidden;
+    }
+    .about {
+        padding: 35rem 0 25rem;
+    }
+    .about .item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .about .list {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .about .list::before {
+        display: block;
+        content: '';
+        width: 120%;
+        height: 50%;
+        background-color: var(--first-brand-color);
+        position: absolute;
+        left: 50%;
+        top: -10rem;
+        transform: translate(-50%, 0);
+    }
+    .about .item {
+        width: 30%;
+        border: .5rem solid var(--main-text-color);
+        padding: 20rem 1.5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}

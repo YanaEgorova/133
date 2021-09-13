@@ -1,0 +1,28 @@
+.info__wrapper {
+    /* background-color: var(--third-brand-color); */
+}
+.info__wrapper .container, .info__wrapper .section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.info .img {
+    margin-bottom: 0;
+}
+.info .block {
+    padding: 15rem 2rem;
+    background-color: var(--first-brand-color);
+}
+@media screen and (min-width: 1024px)  {
+    .info {
+        display: flex;
+    }
+    .info .block {
+        background-color: var(--first-brand-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info .text {
+       margin-bottom: 0;
+    }
+}
